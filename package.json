@@ -1,8 +1,8 @@
 {
   "name": "winston-pubnub",
-  "version": "0.0.1",
-  "description": "A syslog transport for pubnub",
-  "main": "index.js",
+  "version": "0.0.2",
+  "description": "A winston transport for pubnub",
+  "main": "./lib/winston-pubnub",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +14,8 @@
   "keywords": [
     "winston",
     "pubnub",
-    "logging"
+    "logging",
+    "pubsub"
   ],
   "license": "MIT",
   "dependencies": {

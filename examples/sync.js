@@ -17,18 +17,16 @@ var logger = new (winston.Logger)({
 			"channel": "log_channel",
 			publish_key   : process.env.publish_key,
 		    subscribe_key : process.env.subscribe_key,
-			timestamp: true
-
+		    timestamp: function() {
+				return Date.now();
+			}
 		})
 	]
 });
 
-setInterval(function () {
-	logger.log('info', 'Hello created log files!', { 'foo': 'bar' });
-	logger.info("127.0.0.1 - there's no place like home");
-	logger.warn("127.0.0.1 - there's no place like home");
-	logger.error("127.0.0.1 - there's no place like home");
+for ( var i = 0 ; i < 10 ; i++) {
+	logger.log('info', 'Hello created log files! ' + i);
+}
 
-	logger.debug("Will not be logged in either transport!");
-	logger.verbose("Will be logged in both transports!");
-}, 3000);
+
+process.exit() ;
