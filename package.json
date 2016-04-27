@@ -1,13 +1,18 @@
 {
   "name": "winston-pubnub",
   "version": "0.0.1",
-  "description": "",
+  "description": "A syslog transport for pubnub",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Grant Fong <grantchiu011101@gmail.com>",
+  "keywords": [
+    "winston",
+    "pubnub",
+    "logging"
+  ],
+  "license": "MIT",
   "dependencies": {
     "deasync": "^0.1.5",
     "pubnub": "^3.14.5",

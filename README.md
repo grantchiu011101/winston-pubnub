@@ -36,6 +36,9 @@ configuration
  * subscribe_key : 
 
 
+
+Author: [Grant Fong](http://www.fb.com/grantchiu)
+
 The MIT License (MIT)
 
 Copyright (c) 2015
