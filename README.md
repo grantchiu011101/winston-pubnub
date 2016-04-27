@@ -24,8 +24,8 @@ Example
         new (winston.transports.Console)(),
         new (winston.transports.Pubnub)({
           "channel": "log_channel",
-          "publish_key"   : "pub-c-5f8c7839-fac3-43ee-a8e3-e3fd9db50d2f",
-          "subscribe_key" : "sub-c-617c958c-75a8-11e5-8d0a-0619f8945a4f"
+          "publish_key"   : process.env.publish_key,
+          "subscribe_key" : process.env.subscribe_key
         })
       ]
     });
