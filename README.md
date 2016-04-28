@@ -18,7 +18,7 @@ Example
 =======
 
     var winston = require('winston') ;
-    require('../lib/winston-pubnub').Pubnub;
+    require('winston-pubnub').Pubnub;
     var logger = new (winston.Logger)({
       transports: [
         new (winston.transports.Console)(),
